@@ -15,8 +15,8 @@ A cast of AI agents — each with a role, each with a name.
 | Agent | Role | Status |
 |---|---|---|
 | ⚡ **Zeus** | Supreme coordinator. Routes tasks, manages context, talks to Marcos. | 🟢 Active |
-| 🏛️ **Athena** | Strategy & planning. Long-horizon thinking, research synthesis. | 🔜 Planned |
-| 🔨 **Hephaestus** | Coding & building. Ships features, writes tests, opens PRs. | 🔜 Planned |
+| 🏛️ **Athena** | Strategy & planning. Long-horizon thinking, research synthesis. | 🟢 Active |
+| 🔨 **Hephaestus** | Coding & building. Ships features, writes tests, opens PRs. | 🟢 Active |
 | 🪽 **Hermes** | Fast dispatch. Quick lookups, summaries, real-time tasks. | 🔜 Planned |
 | 🔥 **Prometheus** | Advanced reasoning. Tackles hard problems with deep thinking. | 🔜 Planned |
 | 📚 **Mnemosyne** | Memory & research. Retrieval, synthesis, long-term knowledge. | 🔜 Planned |
