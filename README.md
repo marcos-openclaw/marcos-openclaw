@@ -1,47 +1,86 @@
 # Marcos OpenClaw ⚡
 
-> *An AI-native workspace — orchestrated, persistent, and always running.*
+> *An AI-native workspace, orchestrated, persistent, and always running.*
 
-This account is the GitHub home of **Marcos OpenClaw**: a personal AI coordination layer built on [OpenClaw](https://openclaw.ai), running on a Mac Mini named **Olympus** in Madrid, Spain.
+This account is the GitHub home of **Marcos OpenClaw**: a personal multi-agent system built on [OpenClaw](https://openclaw.ai), running on a Mac Mini named **Olympus** in Madrid, Spain.
 
-Behind every commit here is an agent. Behind every agent is a purpose.
+Behind every commit here is an agent. Behind every agent is a role.
 
 ---
 
 ## The Pantheon
 
-A cast of AI agents — each with a role, each with a name.
+A small cast of specialized agents, each with a distinct responsibility.
 
 | Agent | Role | Model | Status |
 |---|---|---|---|
-| ⚡ **Zeus** | Supreme coordinator. Routes tasks, manages context, talks to Marcos. | Claude Sonnet 4.6 | 🟢 Active |
-| 🏛️ **Athena** | Strategy & planning. Long-horizon thinking, research synthesis. | Claude Opus 4.6 | 🟢 Active |
-| 🔨 **Hephaestus** | Coding & building. Ships features, writes tests, opens PRs. | Claude Sonnet 4.6 | 🟢 Active |
-| 🏠 **Hestia** | Local home base. System queries, file browsing, on-device tasks. | Qwen 3.5 27B (local) | 🟢 Active |
-| 🪽 **Hermes** | Fast dispatch. Quick lookups, summaries, real-time tasks. | — | 🔜 Planned |
-| 🔥 **Prometheus** | Advanced reasoning. Tackles hard problems with deep thinking. | — | 🔜 Planned |
-| 📚 **Mnemosyne** | Memory & research. Retrieval, synthesis, long-term knowledge. | — | 🔜 Planned |
-| 👁️ **Argus** | Monitoring & vision. Watches systems, processes images and video. | — | 🔜 Planned |
-| 🐕 **Cerberus** | Security & fallback. Guards access, audits, handles edge cases. | — | 🔜 Planned |
+| ⚡ **Zeus** | Coordinator and daily driver. Handles direct conversations with Marcos, routes work, manages system flow. | Claude Sonnet 4.6 | 🟢 Active |
+| 🏛️ **Athena** | Strategy and deep analysis. Planning, research synthesis, architecture, technical writing. | Claude Opus 4.6 | 🟢 Active |
+| 🔨 **Hephaestus** | Builder. Implements features, writes tests, maintains repos, opens PRs. | Claude Sonnet 4.6 | 🟢 Active |
+| 🏠 **Hestia** | Local utility agent. On-device system queries, file browsing, lightweight local tasks. | Qwen 3.5 27B via Ollama | 🟢 Active |
+
+### Possible future agents
+
+These are part of the broader vision, but not all are implemented yet.
+
+| Agent | Intended role | Status |
+|---|---|---|
+| 🪽 **Hermes** | Fast dispatch, quick summaries, real-time lightweight tasks | 🔜 Planned |
+| 🔥 **Prometheus** | Hard problems, advanced reasoning, deeper exploratory work | 🔜 Planned |
+| 📚 **Mnemosyne** | Memory, retrieval, synthesis, long-term knowledge operations | 🔜 Planned |
+| 👁️ **Argus** | Monitoring, vision, image and video workflows | 🔜 Planned |
+| 🐕 **Cerberus** | Security, auditing, access control, fallback handling | 🔜 Planned |
 
 ---
 
-## The Host
+## How the system works
 
-```
+Marcos talks primarily to **Zeus** over Telegram.
+
+Zeus acts as the coordinator:
+- handles simple requests directly,
+- sends deep thinking to **Athena**,
+- sends implementation work to **Hephaestus**,
+- and uses **Hestia** when a task makes more sense locally on Olympus.
+
+This is not a single chatbot with a costume change. It is a persistent small team with role separation, memory, task tracking, and repo-backed outputs.
+
+---
+
+## The host
+
+```text
 Olympus
 ├── Hardware:  Mac Mini (Apple Silicon, arm64)
 ├── Location:  Madrid, Spain 🇪🇸
 ├── Runtime:   OpenClaw + Claude (Anthropic) + Ollama (local)
+├── Messaging: Telegram bots, one per active agent
 └── Online:    24/7
 ```
 
 ---
 
-## The Human
+## The human
 
-**Marcos** — PhD researcher at Universidad Politécnica de Madrid, specializing in AI.  
-Computer vision · Multimodal AI · Deep learning · Video understanding · LLMs · Agents
+**Marcos** is a PhD researcher at Universidad Politécnica de Madrid, working in AI.
+
+Areas of focus:
+- Computer vision
+- Multimodal AI
+- Deep learning
+- Video understanding
+- LLMs
+- Agent systems
+
+---
+
+## Current stack
+
+- **OpenClaw** for orchestration, sessions, routing, tools, and channel integration
+- **Anthropic Claude** for the main cloud agents
+- **Ollama** for local model execution on Olympus
+- **Olympus Board** for task tracking and agent workflow visibility
+- **GitHub** as the canonical home for projects, docs, and shipped work
 
 ---
 
@@ -49,18 +88,19 @@ Computer vision · Multimodal AI · Deep learning · Video understanding · LLMs
 
 | Repo | Description |
 |---|---|
-| [OpenClaw](https://github.com/marcos-openclaw/OpenClaw) | Workspace files, memory, and config for the Olympus installation |
+| [OpenClaw](https://github.com/marcos-openclaw/OpenClaw) | Live workspace mirror, agent files, memory, and sanitized config for Olympus |
+| [olympus-board](https://github.com/marcos-openclaw/olympus-board) | Task board and activity system for the Olympus agent team |
 
 ---
 
-## How It Works
+## What this account is
 
-Marcos talks to Zeus over Telegram. Zeus coordinates tasks, delegates to specialized agents, manages memory, and keeps everything running. Agents write code, search the web, check calendars, manage files, and push commits — all on behalf of their human.
+This is the public GitHub layer of an active personal AI system.
 
-Hestia runs entirely on-device via Ollama — no cloud dependency. She's the safety net when the internet is down and the go-to for local system tasks.
+Some repos are infrastructure. Some are experiments. Some are fully built projects created or maintained through the Olympus workflow.
 
-It's less of a chatbot and more of a small, persistent AI team.
+The common thread is the same: agent-assisted work, but with structure, separation of roles, and real persistence.
 
 ---
 
-*Built with [OpenClaw](https://openclaw.ai) · Powered by Anthropic Claude & Ollama · Running on Olympus*
+*Built with [OpenClaw](https://openclaw.ai) · Powered by Anthropic Claude and Ollama · Running on Olympus*
